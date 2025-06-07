@@ -5,12 +5,40 @@
       "PackagePath": "staticwebassets\\Práctica4-JeanEstrada.lymt6a1mcz.bundle.scp.css"
     },
     {
+      "Id": "C:\\USMP - Jean Carlos\\Clases\\Ciclo VI\\Programación I\\Semana 15\\Practica4\\Práctica4-JeanEstrada\\wwwroot\\css\\Home\\style.css",
+      "PackagePath": "staticwebassets\\css\\Home\\style.css"
+    },
+    {
+      "Id": "C:\\USMP - Jean Carlos\\Clases\\Ciclo VI\\Programación I\\Semana 15\\Practica4\\Práctica4-JeanEstrada\\wwwroot\\css\\Recommendation\\style.css",
+      "PackagePath": "staticwebassets\\css\\Recommendation\\style.css"
+    },
+    {
+      "Id": "C:\\USMP - Jean Carlos\\Clases\\Ciclo VI\\Programación I\\Semana 15\\Practica4\\Práctica4-JeanEstrada\\wwwroot\\css\\Sentiment\\style.css",
+      "PackagePath": "staticwebassets\\css\\Sentiment\\style.css"
+    },
+    {
       "Id": "C:\\USMP - Jean Carlos\\Clases\\Ciclo VI\\Programación I\\Semana 15\\Practica4\\Práctica4-JeanEstrada\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\USMP - Jean Carlos\\Clases\\Ciclo VI\\Programación I\\Semana 15\\Practica4\\Práctica4-JeanEstrada\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\USMP - Jean Carlos\\Clases\\Ciclo VI\\Programación I\\Semana 15\\Practica4\\Práctica4-JeanEstrada\\wwwroot\\js copy\\site.js",
+      "PackagePath": "staticwebassets\\js copy\\site.js"
+    },
+    {
+      "Id": "C:\\USMP - Jean Carlos\\Clases\\Ciclo VI\\Programación I\\Semana 15\\Practica4\\Práctica4-JeanEstrada\\wwwroot\\js\\Home\\script.js",
+      "PackagePath": "staticwebassets\\js\\Home\\script.js"
+    },
+    {
+      "Id": "C:\\USMP - Jean Carlos\\Clases\\Ciclo VI\\Programación I\\Semana 15\\Practica4\\Práctica4-JeanEstrada\\wwwroot\\js\\Recommendation\\script.js",
+      "PackagePath": "staticwebassets\\js\\Recommendation\\script.js"
+    },
+    {
+      "Id": "C:\\USMP - Jean Carlos\\Clases\\Ciclo VI\\Programación I\\Semana 15\\Practica4\\Práctica4-JeanEstrada\\wwwroot\\js\\Sentiment\\script.js",
+      "PackagePath": "staticwebassets\\js\\Sentiment\\script.js"
     },
     {
       "Id": "C:\\USMP - Jean Carlos\\Clases\\Ciclo VI\\Programación I\\Semana 15\\Practica4\\Práctica4-JeanEstrada\\wwwroot\\js\\site.js",

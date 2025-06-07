@@ -2,27 +2,60 @@
     ViewData["Title"] = "Recomendación de Productos";
 }
 
-<h2>Recomendación de Productos</h2>
+@section Styles {
+    <link rel="stylesheet" href="~/css/Recommendation/style.css" />
+}
 
-<form method="post">
-    <div class="form-group">
-        <label for="userId">Ingrese el ID del usuario:</label>
-        <input type="text" name="userId" class="form-control" required />
-    </div>
-    <button type="submit" class="btn btn-success mt-2">Recomendar</button>
-</form>
+<div class="recommendation-container">
+    <div class="recommendation-card">
+        <h2 class="recommendation-title">
+            <i class="bi bi-stars"></i> Recomendador de Productos
+        </h2>
+        <p class="recommendation-subtitle">Ingresa un ID de usuario para obtener recomendaciones personalizadas con IA</p>
+        
+        <form method="post" class="recommendation-form">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person-badge"></i></span>
+                    <input type="text" name="userId" class="form-control" 
+                           placeholder="Ej: U1, U2, U3..." required />
+                </div>
+            </div>
+            <button type="submit" class="btn btn-recommend">
+                <i class="bi bi-magic"></i> Generar Recomendaciones
+            </button>
+        </form>
 
-@if (ViewBag.Recomendaciones != null)
-{
-    <div class="mt-4">
-        <h4>Productos recomendados para <strong>@ViewBag.Usuario</strong>:</h4>
-        <ul class="list-group">
-            @foreach (var rec in ViewBag.Recomendaciones)
-            {
-                <li class="list-group-item">
-                    Producto: <strong>@rec.ProductId</strong> | Score: @String.Format("{0:N3}", rec.Score)
-                </li>
-            }
-        </ul>
+        @if (ViewBag.Recomendaciones != null)
+        {
+            <div class="recommendation-results">
+                <h4 class="results-title">
+                    <i class="bi bi-hand-thumbs-up"></i> Productos recomendados para 
+                    <span class="user-id">@ViewBag.Usuario</span>
+                </h4>
+                
+                <div class="recommendation-grid">
+                    @foreach (var rec in ViewBag.Recomendaciones)
+                    {
+                        <div class="product-card">
+                            <div class="product-header">
+                                <i class="bi bi-box-seam"></i>
+                                <span>Producto: <strong>@rec.ProductId</strong></span>
+                            </div>
+                            <div class="product-score">
+                                <div class="score-bar">
+                                    <div class="score-fill" style="width: @((int)(rec.Score * 100))%"></div>
+                                </div>
+                                <span class="score-value">@String.Format("{0:N3}", rec.Score)</span>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
     </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Recommendation/script.js"></script>
 }

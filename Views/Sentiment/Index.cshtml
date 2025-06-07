@@ -1,19 +1,42 @@
 @model Práctica4_JeanEstrada.Models.OpinionModel
 
-<h2>Analizar Opinión</h2>
+@section Styles {
+    <link rel="stylesheet" href="~/css/Sentiment/style.css" />
+}
 
-<form asp-action="Index" method="post">
-    <div class="form-group">
-        <label>Escribe una opinión:</label>
-        <textarea name="Text" class="form-control" rows="4"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Analizar</button>
-</form>
+<div class="sentiment-container">
+    <div class="sentiment-card">
+        <h2 class="sentiment-title">
+            <i class="bi bi-emoji-neutral"></i> Análisis de Opinión
+        </h2>
+        <p class="sentiment-subtitle">Escribe una opinión y nuestro modelo de IA determinará si es positiva o negativa.</p>
+        
+        <form asp-action="Index" method="post" class="sentiment-form">
+            <div class="form-group">
+                <textarea name="Text" class="form-control sentiment-textarea" 
+                    rows="5" placeholder="Ej: 'Me encanta este producto, lo recomiendo totalmente...'"></textarea>
+            </div>
+            <button type="submit" class="btn btn-analyze">
+                <i class="bi bi-robot"></i> Analizar Opinión
+            </button>
+        </form>
 
-@if (ViewBag.Resultado != null)
-{
-    <div class="alert alert-info mt-3">
-        <strong>Resultado:</strong> @ViewBag.Resultado <br />
-        <strong>Confianza:</strong> @ViewBag.Probabilidad
+        @if (ViewBag.Resultado != null)
+        {
+            <div class="sentiment-result">
+                <div class="result-header @((ViewBag.Resultado.ToString().Contains("Positiva") ? "positive" : "negative"))">
+                    <i class="bi @(ViewBag.Resultado.ToString().Contains("Positiva") ? "bi-emoji-smile" : "bi-emoji-frown")"></i>
+                    <span>@ViewBag.Resultado</span>
+                </div>
+                <div class="confidence-bar">
+                    <div class="confidence-fill" style="width: @((int)(ViewBag.Probabilidad * 100))%"></div>
+                    <span class="confidence-value">@((int)(ViewBag.Probabilidad * 100))% de confianza</span>
+                </div>
+            </div>
+        }
     </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Sentiment/script.js"></script>
 }
