@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Práctica4-JeanEstrada")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91cbb555b8a0f7a28d5dd77d018b52f95012a157")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2ecaecd6641948437751fe41ad1cbc7c3575e11")]
 [assembly: System.Reflection.AssemblyProductAttribute("Práctica4-JeanEstrada")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Práctica4-JeanEstrada")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
