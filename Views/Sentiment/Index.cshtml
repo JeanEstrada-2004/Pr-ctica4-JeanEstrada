@@ -1,0 +1,19 @@
+@model Práctica4_JeanEstrada.Models.OpinionModel
+
+<h2>Analizar Opinión</h2>
+
+<form asp-action="Index" method="post">
+    <div class="form-group">
+        <label>Escribe una opinión:</label>
+        <textarea name="Text" class="form-control" rows="4"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Analizar</button>
+</form>
+
+@if (ViewBag.Resultado != null)
+{
+    <div class="alert alert-info mt-3">
+        <strong>Resultado:</strong> @ViewBag.Resultado <br />
+        <strong>Confianza:</strong> @ViewBag.Probabilidad
+    </div>
+}
