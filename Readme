@@ -1,0 +1,155 @@
+EL PROYECTO A SIDO MODIFICADO PARA AGREGAR MÁS DATOS PARA QUE LA IA LO ANALICE MEJOR, AQUÍ ESTÁN LOS NUEVOS DATOS USADOS:
+📁 ARCHIVO 1: sentiment-data.tsv
+
+Label	Text
+true	El producto es excelente, cumple con todo lo prometido  
+true	Increíble calidad, vale cada centavo  
+true	Llegó antes de lo esperado y en perfecto estado  
+true	Funciona perfectamente, estoy muy satisfecho  
+true	Muy buen empaque y el producto es genial  
+true	Rápido envío, exactamente como en la descripción  
+true	Lo recomiendo 100%, superó mis expectativas  
+true	Fácil de usar y muy eficiente, me encantó  
+true	Compraría otra vez sin dudarlo, excelente servicio  
+true	Materiales premium, se nota la diferencia  
+true	El mejor producto que he comprado en años  
+true	Atención al cliente muy profesional  
+true	No tengo quejas, todo perfecto desde el primer día  
+true	El producto es aún mejor de lo que esperaba  
+true	Muy contento con mi compra, lo uso a diario  
+true	Empaque seguro y producto impecable  
+true	Precio justo para la calidad que ofrece  
+true	Entrega rápida y sin complicaciones  
+true	Cumple al 100% con lo anunciado  
+true	Lo recomiendo, es un producto confiable  
+true	Muy durable, resistente y funcional  
+true	Buen diseño y ergonómico, me sorprendió  
+true	La mejor compra del año, sin exagerar  
+true	Superó todas mis expectativas, feliz con él  
+true	No cambaría este producto por ningún otro  
+true	Inmejorable relación calidad-precio  
+true	Funciona sin problemas desde el primer uso  
+true	El envío fue más rápido de lo prometido  
+true	Producto premium, se siente de alta gama  
+true	Compré otro para regalar, así de bueno es  
+true	Muy satisfecho, cumplió con todo lo esperado  
+true	Vale la pena invertir en este producto  
+true	Lo necesitaba y cumplió con creces  
+true	Excelente presentación y funcionalidad  
+true	El producto es una maravilla, lo adoro  
+true	No me arrepiento para nada de esta compra  
+true	Llegó intacto y funciona perfectamente  
+true	Calidad superior a otros de su categoría  
+true	Muy buen rendimiento, superó lo esperado  
+true	Es justo lo que buscaba, estoy encantado  
+true	Recomendado, no decepciona en absoluto  
+true	El producto es un acierto total  
+true	Muy buen acabado y materiales resistentes  
+true	No le falta nada, es perfecto  
+true	Lo volvería a comprar sin pensarlo  
+true	Cumple su función al 100%  
+true	Muy conforme, todo llegó en orden  
+true	Es incluso mejor de lo que imaginaba  
+true	No tengo nada negativo que decir  
+false	El producto está mal, no funciona correctamente  
+false	Pésima calidad, se rompió al primer uso  
+false	No recomiendo este producto, es una estafa  
+false	Llegó tarde y en mal estado  
+false	Muy decepcionado, no cumple lo prometido  
+false	El peor producto que he comprado  
+false	Publicidad engañosa, no es lo que esperaba  
+false	Demasiado caro para la mala calidad que tiene  
+false	No sirve, no pierdan su dinero  
+false	Problemas desde el primer día, fatal  
+false	No vale ni la mitad de lo que cuesta  
+false	Material frágil, se dañó con nada  
+false	Atención al cliente pésima, no responden  
+false	Devolución complicada y sin solución  
+false	No compren esto, hay mejores opciones  
+false	Se sobrecalienta y deja de funcionar  
+false	No es compatible como dicen en la descripción  
+false	Mala experiencia, no lo recomiendo  
+false	El tamaño no coincide con lo anunciado  
+false	Fallas constantes, no lo compren  
+false	No es durable, se rompió en una semana  
+false	No cumple con las expectativas mínimas  
+false	Pésimo servicio postventa  
+false	Defectuoso de fábrica, no lo usen  
+false	No funciona como debería, es basura  
+false	Me arrepiento totalmente de esta compra  
+false	El producto es una decepción total  
+false	No vale el precio, calidad pésima  
+false	Inservible, no cumple su función básica  
+false	No lo recomiendo ni a mi peor enemigo  
+false	Mentiras en la descripción, no sirve  
+false	El envío tardó un mes y llegó roto  
+false	No es lo que aparece en las fotos  
+false	Calidad inferior, no compren esta marca  
+false	Problemas de diseño, no es funcional  
+false	No lo vuelvo a comprar ni regalado  
+false	Pésimo empaque, llegó todo maltratado  
+false	No tiene garantía real, cuidado  
+false	No cumple con los estándares mínimos  
+false	Defectos ocultos, no es confiable  
+false	No es apto para el uso que prometen  
+false	Falla técnica grave, no lo usen  
+false	Compré otro y también salió malo  
+false	No tiene instrucciones claras, complicado  
+false	No es seguro, puede causar accidentes  
+false	El peor servicio al cliente que he visto  
+false	No cumple con las normativas de calidad  
+false	No lo recomiendo bajo ninguna circunstancia  
+
+📁 ARCHIVO 2: ratings-data.csv
+
+UserId,ProductId,Label
+U1,P1,5
+U1,P3,4
+U1,P5,3
+U2,P2,1
+U2,P4,2
+U2,P6,5
+U3,P1,4
+U3,P7,3
+U3,P9,2
+U4,P3,5
+U4,P5,1
+U4,P8,4
+U5,P2,3
+U5,P4,5
+U5,P10,2
+U6,P1,5
+U6,P6,4
+U6,P9,1
+U7,P3,2
+U7,P5,5
+U7,P7,3
+U8,P2,4
+U8,P4,1
+U8,P8,5
+U9,P1,3
+U9,P6,2
+U9,P10,4
+U10,P3,5
+U10,P5,1
+U10,P7,2
+U1,P2,4
+U1,P4,3
+U2,P1,5
+U2,P3,2
+U2,P5,4
+U3,P2,1
+U3,P4,5
+U3,P6,3
+U4,P1,4
+U4,P7,2
+U4,P9,5
+U5,P3,3
+U5,P6,1
+U5,P8,4
+U6,P2,5
+U6,P4,2
+U6,P7,3
+U7,P1,1
+U7,P6,4
+U7,P10,5
