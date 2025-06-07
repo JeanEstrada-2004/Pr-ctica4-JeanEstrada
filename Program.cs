@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Agregar servicios MVC
 builder.Services.AddControllersWithViews();
 
-// Configuración de la cadena de conexión (usa Render o local)
+// Configuración de la cadena de conexión a PostgreSQL (Render)
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -14,25 +14,21 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Middleware de manejo de errores
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles(); // ✅ Carga archivos estáticos (css, js, imágenes)
+
 app.UseRouting();
-
 app.UseAuthorization();
-
-app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
